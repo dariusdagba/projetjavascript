@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <button id="idbtn1" class="btn btn-primary m-1" >Clique moi</button>
+    <button id="idbtn2" class="btn btn-danger m-1">Clique moi</button>
+    <button id="idbtn3" class="btn btn-warning m-1">Clique moi</button>
+    
+    <div id="iddiv" class="container m-5">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptates accusantium tenetur odio eos reiciendis maiores minima quae sequi odit libero a deserunt quia itaque, enim minus? Molestiae, dolores ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, cum cupiditate, ut nam harum totam aperiam minima sed amet explicabo unde doloribus assumenda placeat fugit. Magni eum perspiciatis quae maxime?
+    </div>
+    <script>
+        
+        let btn1=document.querySelector('#idbtn1')
+        btn1.addEventListener('click',function()
+        {
+         let ddiv=document.querySelector('#iddiv')
+         ddiv.style.backgroundColor='blue'
+         ddiv.style.color='white'
+        })
+        
+        let btn2=document.querySelector('#idbtn2')
+        btn2.addEventListener('click',function()
+        {
+         let ddiv=document.querySelector('#iddiv')
+         ddiv.style.backgroundColor='red'
+         ddiv.style.color='white'
+        })
+        
+        let btn3=document.querySelector('#idbtn3')
+        btn3.addEventListener('click',function()
+        {
+         let ddiv=document.querySelector('#iddiv')
+         ddiv.style.backgroundColor='yellow'
+         ddiv.style.color='white'
+        })
+    </script>
+</body>
+</html>

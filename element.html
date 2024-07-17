@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <p>Dario</p>
+        <p id="idg">Don Toliver</p>
+        <p> Pop smoke</p>
+        <h1>Depanner des scripts internet</h1>
+    </div>
+
+    <script>
+        let g=document.createElement('h1');
+        g.innerHTML="Informatique";
+        let mondiv=document.querySelector('div');
+        mondiv.appendChild(g);
+        let d=document.createElement('a');
+        d.innerHTML="lien";
+        d.setAttribute('href','https://www.google.com');
+        let mond=document.querySelector('div');
+        mond.appendChild(d);
+        let im=document.createElement('img')
+        im.setAttribute('src','th.jpg')
+        let mond2=document.querySelector('body');
+        mond2.appendChild(im);
+        let rt=document.createElement('h4')
+        rt.innerHTML="T&T";
+        let po=document.querySelector('#idg');
+        let dp=document.querySelector('div');
+        dp.insertBefore(rt,po.nextSibling);
+
+        let a =document.querySelector('h1');
+        a.remove();
+    </script>
+</body>
+</html>

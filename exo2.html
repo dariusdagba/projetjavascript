@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .idb1{
+            background-color: blue;
+            color: white;
+        }
+        .idc1{
+            background-color: red;
+            color: white;
+        }
+        .idd1{
+            background-color: yellow;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <button class="idb1" id="idb">Bleu</button>
+    <button class="idc1" id="idc">Rouge</button>
+    <button class="idd1" id="idd">Jaune</button>
+
+    <div id="iddiv">
+        
+            <p>Afrique</p>
+            <p>Amerique</p>
+       
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit praesentium natus, quas perspiciatis tempore libero, quo optio hic, accusamus molestiae facilis et atque debitis porro quam maiores nulla nostrum dicta?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consectetur culpa laudantium unde, nam ipsam id, accusamus praesentium minima repudiandae amet soluta tempore voluptas. Commodi quos obcaecati mollitia pariatur soluta.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae quidem, tempora aliquid architecto voluptate ratione voluptatibus odio perferendis nulla reprehenderit aspernatur qui dolorum temporibus dolore, ut hic assumenda eum.
+    </div>
+    <script>
+        
+
+        let a=document.querySelector('#idb')
+        a.onclick= function(){
+            let p=document.querySelector('#iddiv')
+            p.style.backgroundColor='blue'
+        }
+        let b=document.querySelector('#idc')
+
+        b.onclick= function(){
+            let p=document.querySelector('#iddiv')
+            p.style.backgroundColor='red'
+        }
+        let c=document.querySelector('#idd')
+        c.onclick= function(){
+            let p=document.querySelector('#iddiv')
+            p.style.backgroundColor='yellow'
+        }
+
+        
+        
+        
+        
+    </script>
+</body>
+</html>

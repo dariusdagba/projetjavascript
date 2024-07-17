@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.google.com" id="id1">Lien vers google</a>
+    <h1>Institut Teccart</h1>
+    <h3 class="mtr">Dario Toliver</h3>
+    <h4 class="lgl">Dario Toliver</h3>
+    <script>
+        let b= document.querySelector('#id1');
+        //alert(b.innerHTML)
+        //alert(b.getAttribute('href'));
+        b.setAttribute('href',"https://www.facebook.com");
+        //b.removeAttribute('href');
+
+        let h=document.querySelector('h1');
+        //h.style.backgroundColor='blue';
+        //h.style.color='blue'
+        //h.style.fontWeight='bold'
+        h.classList.add('dec')
+        let f=document.querySelector('h3');
+        f.classList.remove('mtr');
+        let g=document.querySelector('h4').className='Canada';
+        
+        
+    </script>
+</body>
+</html>

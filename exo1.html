@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="aa">
+        <p > Diallo</p>
+        <h4> Anne</h4>
+        <p>Coulibaly</p>
+        <h4 id="idt">Thera</h4>
+        <p>Bah</p>
+    </div>
+    <div id="cc">
+        <p>Tucson</p>
+        <p>Arizona</p>
+    </div>
+        
+    <script>
+        let pa=document.createElement('a')
+        pa.innerHTML="clique sur le lien"
+        pa.setAttribute('href','https://www.teccart.qc.ca')
+        let ft=document.querySelector('#idt')
+        let fdiv=document.querySelector('#aa')
+        fdiv.insertBefore(pa,ft.nextSibling)
+        let pr=document.createElement('input')
+        let ddiv=document.querySelector('#cc')
+        ddiv.appendChild(pr)
+    </script>
+</body>
+</html>
