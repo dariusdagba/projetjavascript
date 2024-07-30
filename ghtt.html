@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        #quote {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #generate {
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="quote">Cliquez sur le bouton pour générer une citation aléatoire.</div>
+    <button id="generate">Générer</button>
+
+    <script>
+        var quotes = [
+            "La vie est ce que notre caractère veut qu'elle soit. Nous la façonnons, comme un escargot sa coquille.",
+            "On passe une moitié de sa vie à attendre ceux qu'on aimera et l'autre moitié à quitter ceux qu'on aime.",
+            "La vie est un mystère qu'il faut vivre, et non un problème à résoudre.",
+            "Dans la vie on ne fait pas ce que l'on veut mais on est responsable de ce que l'on est.",
+            "Il faut vivre comme on pense, sinon tôt ou tard on finit par penser comme on a vécu."
+        ];
+
+        document.getElementById('generate').addEventListener('click', function() {
+            var randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById('quote').textContent = quotes[randomIndex];
+        });
+    </script>
+</body>
+</html>

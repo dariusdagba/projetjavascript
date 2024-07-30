@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //let ab=(a,b)=>{ return a+b;}
+        //alert(ab(12,30))
+
+        
+     //const pro= new Promise((resolve,reject)=>{
+      //  let etat=false;
+      //  if(etat){
+      //      resolve("Promesse respectée")
+      //  }
+      //  else{
+       //     reject("Promesse non respectée")
+       // }
+     //})
+
+     function mesDonnees(){
+        return new Promise((resolve,reject)=>{
+            //console.write("Traitement des données")
+            setTimeout(()=>
+            {
+                let t=true;
+                if(t){
+                    resolve("Promesse respectée")
+                }
+                else{
+                    reject("Promesse non respectée")
+                }
+
+                
+            },1000)
+        })
+     }
+    
+     mesDonnees().then((message)=>{
+        document.write(message)
+    })
+    .catch((message)=>{
+        console.error(message)
+    })
+
+     //pro.then((message)=>{
+     //   document.write(message)
+     //})
+    // .catch((message)=>{
+    //    console.error(message)
+    // })
+
+        
+    </script>
+</body>
+</html>

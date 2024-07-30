@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       // let carre= (a)=>{return a*a};
+       // alert(carre(5))
+        
+     /*let factoriel=(c)=>
+     {
+        var i=0;
+        var b=1;
+        while(i<c)
+        {
+            b*=(c-i)
+            i++
+        }
+        return b;
+     }
+     alert(factoriel(5))*/
+
+    function rappel(){
+        document.write('Examen final double standard')
+    }
+    function dart(){
+        document.write('fluiter template <br>')
+    }
+
+    //var t=setTimeout(rappel,5000)
+    //clearTimeout(t);
+    //alert(t)
+    //var y=setInterval(dart,1000)
+    // clearInterval(y)
+    //alert(y)
+    
+    let ty=setInterval(()=>{document.write('Moscou <br>')},2000)
+    setTimeout(()=>{clearInterval(ty); document.write('stop !')},5000)
+    
+
+    </script>
+
+</body>
+</html>
