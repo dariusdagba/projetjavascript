@@ -24,4 +24,16 @@
 function multiplication(a,b){
     return a*b;
 }
-document.write("Le résultat est "+multiplication(9,3));
+//document.write("Le résultat est "+multiplication(9,3));
+
+ setTimeout(a=(c)=>{
+    var i=0;
+    var b=1;
+    while(i<c){
+        b*=(c-i)
+        i++;
+    }
+   return b;
+}, alert(a(5)),2000)
+
+

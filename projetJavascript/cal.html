@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .button {
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            margin: 2px;
+            cursor: pointer;
+        }
+        .textview {
+            width: 217px;
+            margin: 5px;
+            font-size: 25px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <input class="textview" id="result"/>
+        <br/>
+        <button class="button" onclick="insert('1')">1</button>
+        <button class="button" onclick="insert('2')">2</button>
+        <button class="button" onclick="insert('3')">3</button>
+        <button class="button" onclick="insert('+')">+</button>
+        <br/>
+        <button class="button" onclick="insert('4')">4</button>
+        <button class="button" onclick="insert('5')">5</button>
+        <button class="button" onclick="insert('6')">6</button>
+        <button class="button" onclick="insert('-')">-</button>
+        <br/>
+        <button class="button" onclick="insert('7')">7</button>
+        <button class="button" onclick="insert('8')">8</button>
+        <button class="button" onclick="insert('9')">9</button>
+        <button class="button" onclick="insert('*')">*</button>
+        <br/>
+        <button class="button" onclick="insert('.')">.</button>
+        <button class="button" onclick="insert('0')">0</button>
+        <button class="button" onclick="equal('=')">=</button>
+        <button class="button" onclick="insert('/')">/</button>
+        <br/>
+        <button class="button" onclick="clean()">C</button>
+    </div>
+
+    <script type="text/javascript">
+        function insert(num) {
+            document.querySelector('#result').value = document.querySelector('#result').value+num;
+        }
+         
+        function equal() {
+            var exp = document.querySelector('#result').value;
+            if(exp) {
+                document.querySelector('#result').value = eval(exp);
+            }
+        }
+
+        function clean() {
+            document.querySelector('#result').value = "";
+        }
+    </script>
+</body>
+</html>

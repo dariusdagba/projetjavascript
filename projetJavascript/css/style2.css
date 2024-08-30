@@ -1,0 +1,35 @@
+.para-div
+{
+    height: 450px;
+    width: 200px;
+}
+
+.tailles{
+    height: 500px;
+    width: 450px;
+}
+
+.form-control 
+{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    background: none; 
+}
+    
+.form-control:active, .form-control:focus 
+{
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-color: #000; 
+}
+
+.col-form-label 
+{
+        color: #000;
+        font-size: 13px; 
+    
+}

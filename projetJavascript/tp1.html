@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citation Aléatoire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body class="">
+    <button id="idbtn">Clique sur moi</button>
+    <div id="para">
+        <div class="para-div" id="iddiv">
+            <h1>Cliquez sur le bouton pour générer une citation aléatoire.</h1>
+        </div>
+    </div>
+    
+    <script>
+        let tab = [
+            "<h3>La vie est ce que notre caractère veut qu'elle soit. Nous la façonnons, comme un escargot sa coquille.</h3>",
+            "<h3>On passe une moitié de sa vie à attendre ceux qu'on aimera et l'autre moitié à quitter ceux qu'on aime.</h3>",
+            "<h3>La vie est un mystère qu'il faut vivre, et non un problème à résoudre.</h3>",
+            "<h3>Dans la vie on ne fait pas ce que l'on veut mais on est responsable de ce que l'on est.</h3>",
+            "<h3>Il faut vivre comme on pense, sinon tôt ou tard on finit par penser comme on a vécu.</h3>",
+            "<h3>Le travail éloigne de nous trois grands maux : l'ennui, le vice et le besoin.</h3>",
+            "<h3>La vie c'est des étapes... La plus douce c'est l'amour... La plus dure c'est la séparation... La plus pénible c'est les adieux... La plus belle c'est les retrouvailles.</h3>",
+            "<h3>Un seul être vous manque et tout est dépeuplé.</h3>",
+            "<h3>Exige beaucoup de toi-même et attends peu des autres. Ainsi beaucoup d'ennuis te seront épargnés.</h3>",
+            "<h3>La vie est un mystère qu'il faut vivre, et non un problème à résoudre.</h3>",
+            "<h3>Dans la vie on ne fait pas ce que l'on veut mais on est responsable de ce que l'on est.</h3>",
+            "<h3>Choisissez un travail que vous aimez et vous n'aurez pas à travailler un seul jour de votre vie.</h3>",
+            "<h3>Tout le monde est un génie. Mais si vous jugez un poisson à sa capacité de grimper à un arbre, il vivra toute sa vie en croyant qu'il est stupide.",
+            "<h3>La vie, c'est comme une bicyclette, il faut avancer pour ne pas perdre l'équilibre.</h3>",
+            "<h3>L'une des plus grandes douleurs est d'aimer une personne que tu ne peux pas avoir.</h3>",
+            "<h3>Un jour l'amour a dit à l'amitié : Pourquoi existes-tu puisque je suis là ? L'amitié lui répond : Pour amener un sourire là ou tu as laissé des larmes.</h3>",
+            "<h3>Il est difficile de dire adieu lorsqu'on veut rester, compliqué de rire lorsqu'on veut pleurer, mais le plus terrible est de devoir oublier lorsqu'on veut aimer.</h3>",
+            "<h3>On passe une moitié de sa vie à attendre ceux qu'on aimera et l'autre moitié à quitter ceux qu'on aime.</h3>",
+            "<h3>La tolérance atteindra un tel niveau que les personnes intelligentes seront interdites de toutes réflexions pour ne pas offenser les imbéciles.</h3>",
+            "<h3>On a deux vies. La deuxième commence quand on réalise qu'on n'en a qu'une.</h3>",
+            "<h3>L'éducation est l'arme la plus puissante qu'on puisse utiliser pour changer le monde.</h3>",
+            "<h3>Que la force me soit donnée de supporter ce qui ne peut être changé et le courage de changer ce qui peut l'être mais aussi la sagesse de distinguer l'un de l'autre.</h3>",
+            "<h3>Pour critiquer les gens il faut les connaître, et pour les connaître, il faut les aimer.</h3>",
+            "<h3>Le monde est dangereux à vivre ! Non pas tant à cause de ceux qui font le mal, mais à cause de ceux qui regardent et laissent faire.</h3>",
+            "<h3>La chose la plus triste à propos de la trahison est qu'elle ne vient jamais d'ennemis, elle vient de ceux en qui vous avez le plus confiance.</h3>",
+            "<h3>La folie, c'est se comporter de la même manière et s'attendre à un résultat différent.</h3>"
+        ];
+        let c = document.querySelector('button')
+        c.addEventListener('click', function () {
+            c.setAttribute('class', 'm-3 text-white btn btn-success p-2')
+            let randomId = Math.floor(Math.random() * tab.length)
+            let ddiv = document.querySelector('#iddiv')
+            let dpara = document.querySelector('#para')
+            dpara.setAttribute('class', 'd-flex justify-content-center')
+            ddiv.setAttribute('class', 'bg-primary border border-primary border-1 rounded-3 para-div text-white m-2 p-3 text-center')
+            ddiv.innerHTML = tab[randomId]
+
+            ddiv.addEventListener('mouseover', function () {
+                ddiv.setAttribute('class', 'bg-secondary border border-secondary border-1 rounded-3 para-div text-white m-2 p-3 text-center')
+            })
+            ddiv.addEventListener('mouseout', function () {
+                ddiv.setAttribute('class', 'bg-primary border border-primary border-1 rounded-3 para-div text-white m-2 p-3 text-center')
+            })
+        })
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

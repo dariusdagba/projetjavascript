@@ -41,6 +41,21 @@
         }).catch((message)=>{
             console.log(message)
         })
+
+        const av= new Promise((resolve,reject)=>{
+            let r=true;
+            if(r){
+                resolve("dario")
+            }
+            else{
+                reject("darius")
+            }
+        })
+        av.then((message)=>{
+            console.log(message)
+        }).catch((message)=>{
+            console.log(message)
+        })
     </script>
 </body>
 </html>
